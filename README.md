@@ -1,5 +1,6 @@
 # Header-File
 Abstract
+
   Header files are a fundamental component of programming languages such as C and C++, enabling modular program design, improved code organization, and enhanced maintainability. They store declarations that allow different source files to share information without violating principles of encapsulation. This paper explores the structure, purpose, mechanisms, and modern usage of header files, along with the challenges associated with them. The study also highlights best practices and includes scholarly and technical references.
 1. Introduction
   Header files originated from the early UNIX-based C development ecosystem as a means to separate interface from implementation. With increasing program complexity, separating declarations from definitions became essential to reduce redundancy and improve maintainability. Today, header files are central to modular development and are widely used in system software, embedded systems, operating systems, and application development.
