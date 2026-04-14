@@ -48,16 +48,22 @@ typedef struct {
 #endif
 
 3. Role and Purpose of Header Files
+   
 1 Modularity
+
 Header files allow large programs to be split into smaller, manageable modules. This separation improves readability and collaboration across teams.
 2 Code Reusability
+
 Common declarations written once in a header can be included in multiple .c files, eliminating duplication.
 3 Interface–Implementation Separation
+
 The header provides the interface (what functions exist), while .c files contain the implementation (how they work).
 4 Compilation Efficiency
+
 Only declarations need to be shared during compilation, reducing redundancy and speeding up the compilation process when used correctly.
 
 4. Mechanisms of Header File Inclusion
+   
 The C preprocessor uses the directive:
 #include <header.h>
 
@@ -71,7 +77,9 @@ or
 The preprocessor replaces the #include a line with the full content of the header file before compilation begins.
 
 5. Common Issues and Challenges
+   
 1 Multiple Inclusion Problem
+
 Repeated inclusion of a header can cause redefinition errors.
 Solution: Include guards
 #ifndef FILE_H
@@ -80,29 +88,32 @@ Solution: Include guards
 #endif
 
 2 Circular Dependencies
+
 Two headers including each other cause compilation failures.
  Must use forward declarations.
 3 Overuse of Macros
+
 Macros can lead to debugging difficulties due to lack of type checking.
 
 6. Modern Best Practices
-1.	Always use include guards or #pragma once
+   
+1	Always use include guards or #pragma once
  Prevents multiple inclusion.
 
-2.	Minimize content in headers
+2	Minimize content in headers
  Include only essential declarations.
 
-3.	Avoid placing variable definitions in headers
+3	Avoid placing variable definitions in headers
  Use extern instead.
 
-4.	Use namespaces in C++ to avoid name collisions
+4	Use namespaces in C++ to avoid name collisions
 
-5.	Prefer inline or template functions only when necessary
+5	Prefer inline or template functions only when necessary
 
-6.	Keep headers independent
+6	Keep headers independent
  Each header should compile on its own.
 
-7. Applications and Importance
+7 Applications and Importance
 ●	Operating System kernels (Linux uses extensive header hierarchies)
 
 ●	Embedded systems firmware
@@ -121,13 +132,13 @@ Header files ensure that complex systems remain organized while enabling efficie
 Program Analysis
 This project implements basic matrix operations—addition, subtraction, multiplication, and determinant—using C programming. Three files are used: matrix.h,  matrix.c, and main.c, which together make the program well-organized and modular.
 
-1.Purpose of the Program
+1. Purpose of the Program
 
-1.	The main purpose of this program is to:
-2.	Take two 3×3 matrices from the user
-3.	Perform addition, subtraction, multiplication
-4.	Find the determinant of each matrix
-5.	Display all results clearly
+1	The main purpose of this program is to:
+2	Take two 3×3 matrices from the user
+3	Perform addition, subtraction, multiplication
+4	Find the determinant of each matrix
+5	Display all results clearly
 
 2. Structure of the Program
 
@@ -203,15 +214,17 @@ Uses the mathematical formula for the determinant of a 3×3 matrix.
 
 5. Advantages of This Program
 
-1.Code is simple and easy to understand
-2.Header file approach increases readability
-3.Macros reduce repetition
-4.Fast calculations due to direct operations
-5.Good example of structured programming
+1 Code is simple and easy to understand
+2 Header file approach increases readability
+3 Macros reduce repetition
+4 Fast calculations due to direct operations
+5 Good example of structured programming
 
 This project successfully performs all basic matrix operations on 3×3 matrices. The use of macros and structures makes the program efficient and easy to maintain. The output is user-friendly, and all mathematical operations work correctly. This project demonstrates understanding of structures, macros, functions, and matrix mathematics in C programming.
 
-Problem Statement : Write a C program to perform basic operations on 3×3 matrices. The program should read two matrices, A and B, from the user, then compute and display their sum, difference, and product. Additionally, it should calculate and display the determinants of both matrices. All matrix operations—addition, subtraction, multiplication, and determinant calculation—should be implemented using C preprocessor macros, and the results should be displayed in a readable matrix format.
+Problem Statement : 
+
+Write a C program to perform basic operations on 3×3 matrices. The program should read two matrices, A and B, from the user, then compute and display their sum, difference, and product. Additionally, it should calculate and display the determinants of both matrices. All matrix operations—addition, subtraction, multiplication, and determinant calculation—should be implemented using C preprocessor macros, and the results should be displayed in a readable matrix format.
 
 Algorithm for Header file (matrix.h) : 
 
