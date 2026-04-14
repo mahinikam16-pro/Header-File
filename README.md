@@ -3,27 +3,35 @@ Abstract
 
   Header files are a fundamental component of programming languages such as C and C++, enabling modular program design, improved code organization, and enhanced maintainability. They store declarations that allow different source files to share information without violating principles of encapsulation. This paper explores the structure, purpose, mechanisms, and modern usage of header files, along with the challenges associated with them. The study also highlights best practices and includes scholarly and technical references.
 1. Introduction
+
   Header files originated from the early UNIX-based C development ecosystem as a means to separate interface from implementation. With increasing program complexity, separating declarations from definitions became essential to reduce redundancy and improve maintainability. Today, header files are central to modular development and are widely used in system software, embedded systems, operating systems, and application development.
-2. Structure and Components of Header Files
+3. Structure and Components of Header Files
+
   A header file, typically with a .h extension in C/C++, contains information meant to be shared among multiple source files. Common components include:
 1.	Function Prototypes
+   
  Provide the compiler with signatures of functions defined elsewhere.
 
 2.	Macro Definitions
+   
  Created using #define for constants or inline expansion.
 
 3.	Type Definitions
+   
  Includes typedef, struct,enum, and union declarations.
 
 4.	Constant Declarations
+   
  Using const or macros.
 
 5.	Inline Functions
+    
  Frequently used in C++.
 
 6.	Class and Template Declarations (C++ specific)
 
 Example:
+
 #ifndef MYHEADER_H
 #define MYHEADER_H
 
