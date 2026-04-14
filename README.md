@@ -5,6 +5,7 @@ Abstract
 1. Introduction
 
   Header files originated from the early UNIX-based C development ecosystem as a means to separate interface from implementation. With increasing program complexity, separating declarations from definitions became essential to reduce redundancy and improve maintainability. Today, header files are central to modular development and are widely used in system software, embedded systems, operating systems, and application development.
+  
 3. Structure and Components of Header Files
 
   A header file, typically with a .h extension in C/C++, contains information meant to be shared among multiple source files. Common components include:
