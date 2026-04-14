@@ -114,6 +114,7 @@ Macros can lead to debugging difficulties due to lack of type checking.
  Each header should compile on its own.
 
 7 Applications and Importance
+
 ●	Operating System kernels (Linux uses extensive header hierarchies)
 
 ●	Embedded systems firmware
@@ -127,6 +128,7 @@ Macros can lead to debugging difficulties due to lack of type checking.
 Header files ensure that complex systems remain organized while enabling efficient compilation and collaboration.
 
 8. Conclusion
+   
   Header files remain a cornerstone of structured programming in C and C++. Their ability to modularize large codebases, separate interfaces from implementations, and enhance code reuse makes them indispensable. While modern languages offer alternative module systems, header files continue to be crucial for system programming and embedded applications due to their simplicity and power. Understanding proper usage and best practices is essential for writing robust, maintainable software.
 
 Program Analysis
